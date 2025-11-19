@@ -6,7 +6,7 @@ on:
 
 jobs:
   example-job:
-    runs-on: ubutu-linux
+    runs-on: ubuntu-linux
     
     steps:
       - name: Print welcome message
