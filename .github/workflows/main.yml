@@ -1,0 +1,13 @@
+name: test triggers
+
+on:
+  push:
+    branches: main
+
+jobs:
+  example-job:
+    runs-on: ubutu-linux
+    
+    steps:
+      - name: Print welcome message
+        run: echo "welocme to first job"
