@@ -11,3 +11,9 @@ jobs:
     steps:
       - name: Print welcome message
         run: echo "welocme to first job"
+
+      - name: Checkout Coded
+        uses: actions/checkout@v6.0.1
+
+      - name: List files
+        run: ls -la
