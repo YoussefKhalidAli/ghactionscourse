@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - name: show env
-          run: echo "env is ${{ github.event }}"
+          run: echo "env is ${{ github.event.client_payload }}"
