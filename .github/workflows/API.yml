@@ -1,0 +1,12 @@
+on:
+  repository_dispatch:
+      types:
+        - env
+        - user
+        - day
+jobs:
+  show:
+    runs-on: ubuntu-latest
+    steps:
+        - name: show env
+          run: echo "env is ${{ github.event }}"
